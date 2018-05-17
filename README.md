@@ -37,4 +37,12 @@
 * `git status` - check whether there are some uncommited changes
 
 ### Working with nginx:
-1.
+1. Insert command `sudo apt-get install nginx`
+1. Open `/etc/nginx/sites-enabled/default`
+1. Change `server _name _;` and `root /vagrant;`
+1. Open **Vagrantfile**
+1. Uncomment `config.vm.network "forwarded_port", guest: 80, host: 80` and `config.vm.network "private_network", ip: "192.168.33.10"`
+1. Restart VM (`vagrant reload`)
+1. Insert `sudo service nginx start`
+
+**You are the coolest person**
