@@ -35,7 +35,7 @@
 * `cd _folder name_` - go to folder
 * `cd ..` - go one folder back
 * `git status` - check whether there are some uncommited changes
-* ``
+* `git rm --cached __file name_` - delete file from Git
 
 ### Working with nginx:
 1. Insert command `sudo apt-get install nginx`
